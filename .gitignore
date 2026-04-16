@@ -1,0 +1,25 @@
+# Build output
+node_modules/
+dist/
+coverage/
+
+# Runtime state
+*.memory.db
+*.memory.db-wal
+*.memory.db-shm
+.ctxcore/
+.claude/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log

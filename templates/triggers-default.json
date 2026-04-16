@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "name": "stale-long-term",
+      "condition": {
+        "type": "stale-tier",
+        "threshold": 0.3,
+        "tier": "long-term"
+      },
+      "action": "alert",
+      "message": "Long-term memories are stale (avg actuality {avg} in {tier} tier). Consider running reflexion."
+    },
+    {
+      "name": "low-coverage-operational",
+      "condition": {
+        "type": "low-coverage",
+        "threshold": 5,
+        "tier": "operational"
+      },
+      "action": "alert",
+      "message": "Low coverage: only {count}/{threshold} memories in {tier} tier. Consider storing more operational knowledge."
+    },
+    {
+      "name": "recurring-bugs",
+      "condition": {
+        "type": "recurring-pattern",
+        "threshold": 3
+      },
+      "action": "alert",
+      "message": "Recurring pattern detected: {count} memories share common keywords. Consider consolidation."
+    }
+  ]
+}

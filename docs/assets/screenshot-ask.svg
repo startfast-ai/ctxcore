@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="13">
+  <defs>
+    <linearGradient id="titleBar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b2622"/>
+      <stop offset="1" stop-color="#1f1b18"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="800" height="400" rx="10" fill="#1A1915" filter="url(#shadow)"/>
+  <path d="M10,20 Q10,10 20,10 L800,10 Q810,10 810,20 L810,40 L10,40 Z" fill="url(#titleBar)"/>
+  <line x1="10" y1="40" x2="810" y2="40" stroke="#000" stroke-opacity="0.4"/>
+  <circle cx="28" cy="25" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="25" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="25" r="6" fill="#28c841"/>
+  <text x="410" y="29" fill="#8a7f73" text-anchor="middle" font-size="12">my-api — zsh</text>
+
+  <!-- Prompt -->
+  <text x="24" y="72" fill="#D97757">❯</text>
+  <text x="44" y="72" fill="#E8DDD3">ctxcore ask</text>
+  <text x="132" y="72" fill="#EBB299">"why does payments use MongoDB?"</text>
+
+  <!-- Plain text answer -->
+  <text x="24" y="108" fill="#E8DDD3">The payments service was originally on PostgreSQL for all services.</text>
+  <text x="24" y="128" fill="#E8DDD3">In sprint 14, the team migrated the payments module to MongoDB</text>
+  <text x="24" y="148" fill="#E8DDD3">specifically for complex invoice document storage.</text>
+
+  <text x="24" y="182" fill="#E8DDD3">This was flagged as a contradiction with the earlier "PostgreSQL</text>
+  <text x="24" y="202" fill="#E8DDD3">everywhere" policy. Reflexion resolved it as an intentional</text>
+  <text x="24" y="222" fill="#E8DDD3">exception — the payments team needed flexible document schemas</text>
+  <text x="24" y="242" fill="#E8DDD3">that didn't fit PostgreSQL's rigid model.</text>
+
+  <text x="24" y="276" fill="#E8DDD3">Orders service remains on PostgreSQL. No explicit decision has</text>
+  <text x="24" y="296" fill="#E8DDD3">been recorded about the billing service yet.</text>
+
+  <!-- Next command -->
+  <text x="24" y="340" fill="#D97757">❯</text>
+  <text x="44" y="340" fill="#E8DDD3">ctxcore search</text>
+  <text x="156" y="340" fill="#EBB299">"mongodb"</text>
+
+  <text x="24" y="362" fill="#D1C4B5">Found 3 results for "mongodb"</text>
+
+  <!-- Search result row using real badge style -->
+  <rect x="24" y="378" width="36" height="16" fill="#D97757" rx="2"/>
+  <text x="42" y="390" fill="#ffffff" font-weight="bold" text-anchor="middle" font-size="11">OP</text>
+  <text x="70" y="390" fill="#D1C4B5">0.89</text>
+  <text x="108" y="390" fill="#B0593E">vec</text>
+  <text x="140" y="390" fill="#E8DDD3">Payments migrating to MongoDB for document storage</text>
+</svg>

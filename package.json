@@ -1,0 +1,63 @@
+{
+  "name": "@startfast-ai/ctxcore",
+  "version": "0.1.0",
+  "description": "Persistent, intelligent memory for Claude Code",
+  "type": "module",
+  "bin": {
+    "ctxcore": "./dist/bin/ctxcore.js"
+  },
+  "main": "./dist/src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:e2e": "vitest run tests/e2e",
+    "test:live": "CTXCORE_LIVE_TESTS=1 vitest run --config vitest.live.config.ts",
+    "lint": "eslint src bin tests",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "memory",
+    "mcp",
+    "context",
+    "ai"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/startfast-ai/ctxcore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/startfast-ai/ctxcore/issues"
+  },
+  "homepage": "https://github.com/startfast-ai/ctxcore#readme",
+  "files": [
+    "dist/",
+    "templates/",
+    "src/hooks/"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@huggingface/transformers": "^4.0.1",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "better-sqlite3": "^11.7.0",
+    "commander": "^13.1.0",
+    "sqlite-vec": "^0.1.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^3.0.0"
+  }
+}

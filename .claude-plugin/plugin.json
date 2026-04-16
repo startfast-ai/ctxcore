@@ -1,0 +1,49 @@
+{
+  "name": "ctxcore",
+  "version": "0.2.0",
+  "description": "Persistent, intelligent memory for Claude Code. Your project gets smarter while you sleep.",
+  "author": "ctxcore",
+  "license": "MIT",
+  "homepage": "https://github.com/startfast-ai/ctxcore",
+  "capabilities": {
+    "mcp": true,
+    "hooks": true,
+    "skills": true,
+    "commands": true
+  },
+  "install": {
+    "command": "npm install -g ctxcore && ctxcore init --force",
+    "postInstall": "ctxcore init"
+  },
+  "mcp": {
+    "command": "ctxcore",
+    "args": ["serve"],
+    "env": {}
+  },
+  "tools": [
+    "memory_context",
+    "memory_search",
+    "memory_store",
+    "memory_decide",
+    "memory_reflect",
+    "memory_task_create",
+    "memory_task_update",
+    "memory_task_comment",
+    "memory_task_list",
+    "memory_task_link",
+    "memory_spec_create",
+    "memory_spec_read",
+    "memory_spec_update",
+    "memory_spec_list",
+    "memory_spec_link"
+  ],
+  "keywords": [
+    "memory",
+    "context",
+    "intelligence",
+    "persistent",
+    "knowledge-graph",
+    "reflexion",
+    "embeddings"
+  ]
+}

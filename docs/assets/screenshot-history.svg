@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="13">
+  <defs>
+    <linearGradient id="titleBar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b2622"/>
+      <stop offset="1" stop-color="#1f1b18"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="800" height="420" rx="10" fill="#1A1915" filter="url(#shadow)"/>
+  <path d="M10,20 Q10,10 20,10 L800,10 Q810,10 810,20 L810,40 L10,40 Z" fill="url(#titleBar)"/>
+  <line x1="10" y1="40" x2="810" y2="40" stroke="#000" stroke-opacity="0.4"/>
+  <circle cx="28" cy="25" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="25" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="25" r="6" fill="#28c841"/>
+  <text x="410" y="29" fill="#8a7f73" text-anchor="middle" font-size="12">my-api — zsh</text>
+
+  <!-- Prompt -->
+  <text x="24" y="72" fill="#D97757">❯</text>
+  <text x="44" y="72" fill="#E8DDD3">ctxcore history</text>
+
+  <text x="24" y="104" fill="#D1C4B5">Intelligence Score Timeline:</text>
+
+  <!-- Each row: date label, bar rendered as two rects (filled + remainder), score, event -->
+  <g font-size="13">
+    <!-- Apr 3 — score 41 -->
+    <text x="24" y="142" fill="#E8DDD3">Apr  3</text>
+    <rect x="96" y="132" width="98" height="12" fill="#D97757"/>
+    <rect x="194" y="132" width="142" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="142" fill="#E8DDD3">41</text>
+    <text x="388" y="142" fill="#D1C4B5">init</text>
+
+    <!-- Apr 4 — 47 -->
+    <text x="24" y="162" fill="#E8DDD3">Apr  4</text>
+    <rect x="96" y="152" width="113" height="12" fill="#D97757"/>
+    <rect x="209" y="152" width="127" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="162" fill="#E8DDD3">47</text>
+    <text x="388" y="162" fill="#D1C4B5">session</text>
+
+    <!-- Apr 5 — 58 -->
+    <text x="24" y="182" fill="#E8DDD3">Apr  5</text>
+    <rect x="96" y="172" width="139" height="12" fill="#D97757"/>
+    <rect x="235" y="172" width="101" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="182" fill="#E8DDD3">58</text>
+    <text x="388" y="182" fill="#D1C4B5">reflexion</text>
+
+    <!-- Apr 7 — 61 -->
+    <text x="24" y="202" fill="#E8DDD3">Apr  7</text>
+    <rect x="96" y="192" width="146" height="12" fill="#D97757"/>
+    <rect x="242" y="192" width="94" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="202" fill="#E8DDD3">61</text>
+    <text x="388" y="202" fill="#D1C4B5">session</text>
+
+    <!-- Apr 8 — 63 -->
+    <text x="24" y="222" fill="#E8DDD3">Apr  8</text>
+    <rect x="96" y="212" width="151" height="12" fill="#D97757"/>
+    <rect x="247" y="212" width="89" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="222" fill="#E8DDD3">63</text>
+    <text x="388" y="222" fill="#D1C4B5">session</text>
+
+    <!-- Apr 9 — 72 -->
+    <text x="24" y="242" fill="#E8DDD3">Apr  9</text>
+    <rect x="96" y="232" width="173" height="12" fill="#D97757"/>
+    <rect x="269" y="232" width="67" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="242" fill="#E8DDD3">72</text>
+    <text x="388" y="242" fill="#D1C4B5">reflexion</text>
+
+    <!-- Apr 11 — 78 -->
+    <text x="24" y="262" fill="#E8DDD3">Apr 11</text>
+    <rect x="96" y="252" width="187" height="12" fill="#D97757"/>
+    <rect x="283" y="252" width="53" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="262" fill="#E8DDD3">78</text>
+    <text x="388" y="262" fill="#D1C4B5">reflexion</text>
+
+    <!-- Apr 13 — 80 -->
+    <text x="24" y="282" fill="#E8DDD3">Apr 13</text>
+    <rect x="96" y="272" width="192" height="12" fill="#D97757"/>
+    <rect x="288" y="272" width="48" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="282" fill="#E8DDD3">80</text>
+    <text x="388" y="282" fill="#D1C4B5">session</text>
+
+    <!-- Apr 14 — 85 -->
+    <text x="24" y="302" fill="#E8DDD3">Apr 14</text>
+    <rect x="96" y="292" width="204" height="12" fill="#D97757"/>
+    <rect x="300" y="292" width="36" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="302" fill="#E8DDD3">85</text>
+    <text x="388" y="302" fill="#D1C4B5">reflexion</text>
+
+    <!-- Apr 16 — 88 -->
+    <text x="24" y="322" fill="#E8DDD3">Apr 16</text>
+    <rect x="96" y="312" width="211" height="12" fill="#D97757"/>
+    <rect x="307" y="312" width="29" height="12" fill="#D1C4B5" fill-opacity="0.15"/>
+    <text x="350" y="322" fill="#E8DDD3" font-weight="bold">88</text>
+    <text x="388" y="322" fill="#D1C4B5">reflexion</text>
+  </g>
+
+  <!-- Growth summary -->
+  <line x1="24" y1="354" x2="500" y2="354" stroke="#2f2a25"/>
+
+  <text x="24" y="380" fill="#E8DDD3">Growth:</text>
+  <text x="92" y="380" fill="#8BA67E" font-weight="bold">+47 points in 14 days</text>
+
+  <text x="24" y="404" fill="#D1C4B5">Driven by continuous reflexion + session memory accumulation</text>
+</svg>
